@@ -10,7 +10,7 @@
     "preview": "vite preview"
   },
   "dependencies": {
-    "@pangea-esgi/design_system": "^0.0.1",
+    "@pangea-esgi/design_system": "^0.0.3",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
