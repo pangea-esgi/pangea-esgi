@@ -1,4 +1,4 @@
-import { Header} from '@pangea-esgi/design_system/src';
+import { Header } from '@pangea-esgi/design_system/src';
 
 export default function App() {
   return (
