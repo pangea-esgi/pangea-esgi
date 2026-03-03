@@ -1,9 +1,148 @@
-export default function MenuPage() {
-  return (
-    <div>
-      <h1>Menu</h1>
-      <p>Bienvenue sur la page menu.</p>
-    </div>
-  );
-}
+import { MenuCard } from '@pangea-esgi/design_system/src';
 
+type Dish = {
+  title: string;
+  price: string;
+  ingredients: string;
+  description: string;
+  imageUrl: string;
+};
+
+type MenuSection = {
+  title: string;
+  dishes: Dish[];
+};
+
+const exampleImage =
+  'https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=1200&q=80';
+
+const sections: MenuSection[] = [
+  {
+    title: 'Entrées',
+    dishes: [
+      {
+        title: 'Boeuf, butternut.',
+        price: '25€',
+        ingredients: 'Boeuf, butternut.',
+        description:
+          'Lamelle de boeuf, accompagnée d’une mousse de courge butternut.',
+        imageUrl: exampleImage,
+      },
+      {
+        title: 'Tartare fumé.',
+        price: '21€',
+        ingredients: 'Boeuf fumé, huile d’olive.',
+        description: 'Tartare de boeuf fumé aux herbes fraîches.',
+        imageUrl: exampleImage,
+      },
+      {
+        title: 'Velouté d’hiver.',
+        price: '18€',
+        ingredients: 'Courge, crème, noisettes.',
+        description: 'Velouté onctueux de courge et éclats de noisette.',
+        imageUrl: exampleImage,
+      },
+    ],
+  },
+  {
+    title: 'Plats',
+    dishes: [
+      {
+        title: 'Boeuf, butternut.',
+        price: '25€',
+        ingredients: 'Boeuf, butternut.',
+        description:
+          'Lamelle de boeuf, accompagnée d’une mousse de courge butternut.',
+        imageUrl: exampleImage,
+      },
+      {
+        title: 'Volaille rôtie.',
+        price: '24€',
+        ingredients: 'Volaille, jus corsé, légumes.',
+        description: 'Volaille rôtie servie avec légumes de saison.',
+        imageUrl: exampleImage,
+      },
+      {
+        title: 'Poisson grillé.',
+        price: '27€',
+        ingredients: 'Poisson, citron, herbes.',
+        description: 'Poisson grillé minute, citron confit et herbes.',
+        imageUrl: exampleImage,
+      },
+    ],
+  },
+  {
+    title: 'Desserts',
+    dishes: [
+      {
+        title: 'Chocolat noisette.',
+        price: '12€',
+        ingredients: 'Chocolat, noisette.',
+        description: 'Mousse chocolat noir et croustillant noisette.',
+        imageUrl: exampleImage,
+      },
+      {
+        title: 'Tarte agrumes.',
+        price: '11€',
+        ingredients: 'Citron, orange, meringue.',
+        description: 'Tarte fine aux agrumes et meringue légère.',
+        imageUrl: exampleImage,
+      },
+      {
+        title: 'Pomme vanille.',
+        price: '10€',
+        ingredients: 'Pomme, vanille, caramel.',
+        description: 'Pomme confite, crème vanille et caramel doux.',
+        imageUrl: exampleImage,
+      },
+    ],
+  },
+];
+
+const MenuPage = () => {
+  return (
+    <main
+      style={{
+        maxWidth: '1100px',
+        margin: '0 auto',
+        padding: '96px 24px 24px',
+        display: 'grid',
+        gap: '48px',
+      }}
+    >
+      <h1 style={{ margin: 0, color: '#562f00', fontStyle: 'italic' }}>Menu</h1>
+
+      {sections.map((section) => (
+        <section key={section.title} style={{ display: 'grid', gap: '20px' }}>
+          <h2
+            style={{
+              margin: 0,
+              color: '#562f00',
+              borderTop: '2px solid #562f00',
+              paddingTop: '20px',
+              fontStyle: 'italic',
+            }}
+          >
+            {section.title}
+          </h2>
+
+          {section.dishes.map((dish, index) => (
+            <MenuCard
+              key={`${section.title}-${dish.title}-${index}`}
+              title={dish.title}
+              price={dish.price}
+              badges={['plats', 'plats', 'plats']}
+              ingredients={dish.ingredients}
+              description={dish.description}
+              imageUrl={dish.imageUrl}
+              imageAlt={dish.title}
+              reverse={index % 2 === 1}
+            />
+          ))}
+        </section>
+      ))}
+    </main>
+  );
+};
+
+export default MenuPage;
