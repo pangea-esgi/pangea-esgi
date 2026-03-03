@@ -1,0 +1,53 @@
+.pangea-header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: var(--header-height, 60px);
+  background-color: var(--header-bg, #562F00);
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-sizing: border-box;
+  z-index: 1000;
+}
+.pangea-header-link {
+  display: flex;
+  align-items: center;
+  text-decoration: none;
+}
+
+.pangea-header-nav {
+  display: flex;
+  gap: 1rem;
+}
+
+.pangea-header-nav.left {
+  margin-right: auto;
+}
+
+.pangea-header-nav.right {
+  margin-left: auto;
+}
+
+
+/* override only color if needed for header context */
+/* .pangea-header .pangea-lien.pangea-header-nav-link {
+  color: var(--header-link-color, #fff);
+} */
+
+.pangea-header-logo {
+  height: calc(var(--header-height, 60px) - 20px);
+  margin-right: 0.75rem;
+}
+
+.pangea-header-title {
+  color: var(--header-link-color, #fff);
+  font-weight: normal;
+}
+
+/* keep legacy support in case lien component is nested */
+/* .pangea-header .pangea-lien {
+  color: var(--header-link-color, #fff);
+  font-weight: normal;
+} */

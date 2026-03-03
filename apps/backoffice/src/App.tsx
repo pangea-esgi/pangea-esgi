@@ -1,10 +1,9 @@
-import { hello } from '@pangea-esgi/design_system';
+import { Header} from '@pangea-esgi/design_system/src';
 
 export default function App() {
   return (
     <div>
-      <h1>Backoffice</h1>
-      <p>{hello()}</p>
+      <Header title="Backoffice" href="/backoffice" />
     </div>
   )
 }

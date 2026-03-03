@@ -1,0 +1,12 @@
+.pangea-lien {
+  color: var(--link-color, #ffce99);
+  text-decoration: none;
+  cursor: pointer;
+  font-weight: lighter;
+}
+
+/* allow user to override other states if needed */
+.pangea-lien:hover {
+  text-decoration: none;
+ color: var(--link-color-hover, #ffce99);
+}
