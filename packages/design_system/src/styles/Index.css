@@ -40,3 +40,8 @@
   --font-weight-semibold: 600;
   --font-weight-bold: 700;
 }
+
+body {
+  background-color: var(--primary-color);
+  min-height: 100svh;
+}
