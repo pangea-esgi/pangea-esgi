@@ -25,10 +25,9 @@ Codes couleurs en fonction du type de produit à vendre.
 
 ### Les fonts :
 
-Fonts texte : https://fonts.google.com/specimen/Inknut+Antiqua/tester?query=Inknut+Antiqua
+Fonts texte : https://fonts.google.com/specimen/Inter
 
 Fonts titre: https://fonts.google.com/specimen/Playfair+Display
-Choix du style :
 
 ### Choix de style:
 
