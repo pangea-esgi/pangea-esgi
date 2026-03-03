@@ -1,5 +1,5 @@
-import '../styles/Bouton.css';
-import { ButtonHTMLAttributes, ReactNode } from 'react';
+import '../../styles/Bouton.css';
+import type { ButtonHTMLAttributes, ReactNode } from 'react';
 
 type BoutonProps = {
   text: string;
