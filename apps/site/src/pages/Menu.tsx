@@ -4,6 +4,7 @@ import '../assets/styles/Menu.css';
 type Dish = {
   title: string;
   price: string;
+  badges: string[];
   ingredients: string;
   description: string;
   imageUrl: string;
@@ -24,6 +25,7 @@ const sections: MenuSection[] = [
       {
         title: 'Boeuf, butternut.',
         price: '25€',
+        badges: ['boeuf', 'butternut', 'plats'],
         ingredients: 'Boeuf, butternut.',
         description:
           'Lamelle de boeuf, accompagnée d’une mousse de courge butternut.',
@@ -32,6 +34,7 @@ const sections: MenuSection[] = [
       {
         title: 'Tartare fumé.',
         price: '21€',
+        badges: ['boeuf', 'fumé', 'olive'],
         ingredients: 'Boeuf fumé, huile d’olive.',
         description: 'Tartare de boeuf fumé aux herbes fraîches.',
         imageUrl: exampleImage,
@@ -39,6 +42,7 @@ const sections: MenuSection[] = [
       {
         title: 'Velouté d’hiver.',
         price: '18€',
+        badges: ['courge', 'crème', 'noisettes'],
         ingredients: 'Courge, crème, noisettes.',
         description: 'Velouté onctueux de courge et éclats de noisette.',
         imageUrl: exampleImage,
@@ -51,6 +55,7 @@ const sections: MenuSection[] = [
       {
         title: 'Boeuf, butternut.',
         price: '25€',
+        badges: ['boeuf', 'butternut', 'plats'],
         ingredients: 'Boeuf, butternut.',
         description:
           'Lamelle de boeuf, accompagnée d’une mousse de courge butternut.',
@@ -59,6 +64,7 @@ const sections: MenuSection[] = [
       {
         title: 'Volaille rôtie.',
         price: '24€',
+        badges: ['volaille', 'jus', 'légumes'],
         ingredients: 'Volaille, jus corsé, légumes.',
         description: 'Volaille rôtie servie avec légumes de saison.',
         imageUrl: exampleImage,
@@ -66,6 +72,7 @@ const sections: MenuSection[] = [
       {
         title: 'Poisson grillé.',
         price: '27€',
+        badges: ['poisson', 'citron', 'herbes'],
         ingredients: 'Poisson, citron, herbes.',
         description: 'Poisson grillé minute, citron confit et herbes.',
         imageUrl: exampleImage,
@@ -78,6 +85,7 @@ const sections: MenuSection[] = [
       {
         title: 'Chocolat noisette.',
         price: '12€',
+        badges: ['chocolat', 'noisette', 'desserts'],
         ingredients: 'Chocolat, noisette.',
         description: 'Mousse chocolat noir et croustillant noisette.',
         imageUrl: exampleImage,
@@ -85,6 +93,7 @@ const sections: MenuSection[] = [
       {
         title: 'Tarte agrumes.',
         price: '11€',
+        badges: ['citron', 'orange', 'desserts'],
         ingredients: 'Citron, orange, meringue.',
         description: 'Tarte fine aux agrumes et meringue légère.',
         imageUrl: exampleImage,
@@ -92,6 +101,7 @@ const sections: MenuSection[] = [
       {
         title: 'Pomme vanille.',
         price: '10€',
+        badges: ['pomme', 'vanille', 'desserts'],
         ingredients: 'Pomme, vanille, caramel.',
         description: 'Pomme confite, crème vanille et caramel doux.',
         imageUrl: exampleImage,
@@ -124,7 +134,7 @@ const MenuPage = () => {
               key={`${section.title}-${dish.title}-${index}`}
               title={dish.title}
               price={dish.price}
-              badges={['plats', 'plats', 'plats']}
+              badges={dish.badges}
               ingredients={dish.ingredients}
               description={dish.description}
               imageUrl={dish.imageUrl}
