@@ -1,7 +1,5 @@
 .pangea-footer-container {
-  position: absolute;
-  bottom: 0;
-  left: 0;
+  position: relative;
   width: 100vw;
   margin: auto;
   height: 300px;
@@ -9,6 +7,7 @@
   align-items: center;
   justify-content: center;
   overflow: hidden;
+  z-index: -1;
 }
 
 .pangea-footer-circle {

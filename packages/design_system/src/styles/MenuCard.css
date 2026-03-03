@@ -3,7 +3,6 @@
 	grid-template-columns: 1fr minmax(280px, 40%);
 	grid-template-areas: 'content image';
 	gap: var(--padding-20);
-	background: var(--primary-color);
 	color: var(--tertiary-color);
 }
 
