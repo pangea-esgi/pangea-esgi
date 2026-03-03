@@ -18,6 +18,25 @@
   --padding-20: calc(var(--padding-4) * 5);
   --padding-24: calc(var(--padding-4) * 6);
   --padding-26: calc(var(--padding-4) * 6.5);
+  --padding-32: calc(var(--padding-4) * 8);
+  --padding-36: calc(var(--padding-4) * 9);
+  --padding-40: calc(var(--padding-4) * 10);
+  --padding-44: calc(var(--padding-4) * 11);
+  --padding-48: calc(var(--padding-4) * 12);
+  --padding-52: calc(var(--padding-4) * 13);
+  --padding-56: calc(var(--padding-4) * 14);
+  --padding-60: calc(var(--padding-4) * 15);
+  --padding-64: calc(var(--padding-4) * 16);
+  --padding-68: calc(var(--padding-4) * 17);
+  --padding-72: calc(var(--padding-4) * 18);
+  --padding-76: calc(var(--padding-4) * 19);
+  --padding-80: calc(var(--padding-4) * 20);
+  --padding-84: calc(var(--padding-4) * 21);
+  --padding-88: calc(var(--padding-4) * 22);
+  --padding-92: calc(var(--padding-4) * 23);
+  --padding-96: calc(var(--padding-4) * 24);
+  --padding-100: calc(var(--padding-4) * 25);
+  --padding-104: calc(var(--padding-4) * 26);
   --gap-10: 10px;
 
   /* Component dimensions */
