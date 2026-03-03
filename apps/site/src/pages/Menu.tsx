@@ -124,7 +124,7 @@ const MenuPage = () => {
       <h1 className='title-menu'>Menu</h1>
 
       {sections.map((section) => (
-        <section key={section.title} style={{ display: 'grid', gap: 'var(--padding-26)' }}>
+        <section key={section.title} style={{ display: 'grid', gap: 'var(--padding-96)' }}>
           <h2 className='title-section-menu'>
             {section.title}
           </h2>
