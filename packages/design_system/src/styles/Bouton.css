@@ -1,0 +1,68 @@
+/* Color: #562f00 (background marron) - #ffce99 (text color beige)  */
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  justify-content: center;
+  border: none;
+  border-radius: 8px;
+  background: #562f00;
+  color: #ffce99;
+  padding: 16px 32px;
+  line-height: 1;
+  cursor: pointer;
+  transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+}
+
+.btn-icon {
+  display: inline-flex;
+}
+
+.btn-text {
+  font-weight: 400;
+  font-size: 16px;
+}
+
+.btn-primary {
+  background: #562f00;
+  color: #ffce99;
+}
+
+.btn-primary:hover {
+  background: #ffce99;
+  color: #562f00;
+}
+
+.btn-secondary {
+  background: #ffce99;
+  color: #562f00;
+}
+
+.btn-secondary:hover {
+  background: #562f00;
+  color: #ffce99;
+}
+
+.btn-desactivated{
+  background: #6a6259;
+  color: #ffebd6;
+  cursor: not-allowed;
+}
+
+.btn-desactivated:hover{
+  background: #6a6259;
+  color: #ffebd6;
+}
+
+.btn-focus {
+  background: #562f00;
+  color: #ffce99;
+  box-shadow: 0 0 0 2px #ffce99, 0 0 0 4px #562f00;
+}
+
+.btn-focus:hover {
+  background: #ffce99;
+  color: #562f00;
+  box-shadow: 0 0 0 2px #fffdf1, 0 0 0 4px #ffce99;
+}
