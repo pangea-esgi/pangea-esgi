@@ -3,6 +3,7 @@ import FormInput from '@pangea-esgi/design_system/src/_components/molecules/form
 import UploadInput from '@pangea-esgi/design_system/src/_components/molecules/uploadInput';
 import '@pangea-esgi/design_system/src/styles/Contact.css';
 import { Logo } from "@pangea-esgi/design_system/src";
+import {Button }from '@pangea-esgi/design_system/src';
 
 export default function ContactPage() {
   const handleSubmit = (e: React.FormEvent) => {
@@ -14,10 +15,9 @@ export default function ContactPage() {
   return (
     <div>
         <div className = "contact-logo">
-            <Logo />
+            <Logo type='tertiary'/>
         </div>
-      <h1>Contact</h1>
-      <p>Vous pouvez nous contacter via ce formulaire.</p>
+      {/* <p>Vous pouvez nous contacter via ce formulaire.</p> */}
 
       <form onSubmit={handleSubmit}>
         <FormInput
@@ -51,7 +51,10 @@ export default function ContactPage() {
           />
         </div>
         <UploadInput label="Téléchargez un fichier" name="file" />
-        <button type="submit">Envoyer</button>
+        <div className = 'submit-button-container' >
+            <Button type="submit" text='Envoyer'></Button>
+        </div>
+        
       </form>
     </div>
   );
