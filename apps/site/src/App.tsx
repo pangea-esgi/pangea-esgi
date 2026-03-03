@@ -13,12 +13,6 @@ export default function App() {
         <Route path="/contact" element={<ContactPage />} />
       </Routes>
       <Header href="/" />
-      <FormInput
-        label="Nom"
-        type="text"
-        placeholder="Entrez votre nom"
-      />
-      <UploadInput label="Téléchargez un fichier" />
       <Footer />
     </>
   );
