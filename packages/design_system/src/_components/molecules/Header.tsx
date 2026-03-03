@@ -2,23 +2,19 @@ import React from "react";
 import { Lien } from "../atoms/Lien.tsx";
 import "../../styles/Header.css";
 import "../../styles/Lien.css";
-import logo from "../../images/pangeaLogo.png";
 import { Logo } from "../atoms/Logo.tsx";
 
 export type HeaderProps = {
-  title: string;
   href: string;
   links?: { href: string; label: string }[];
 };
 
 export const Header: React.FC<HeaderProps> = ({
-  title,
-  //   href,
   links = [
     { href: "#", label: "Home" },
-    { href: "#", label: "Menu" },
+    { href: "/menu", label: "Menu" },
     { href: "#", label: "About" },
-    { href: "#", label: "Contact" },
+    { href: "/contact", label: "Contact" },
   ],
 }) => {
   const before = links.slice(0, 2);

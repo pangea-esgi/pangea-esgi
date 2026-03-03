@@ -1,17 +1,23 @@
-import { Header } from '@pangea-esgi/design_system/src';
-import FormInput from '@pangea-esgi/design_system/src/_components/molecules/formInput';
-import UploadInput from '@pangea-esgi/design_system/src/_components/molecules/uploadInput';
+import { Header, Footer } from "@pangea-esgi/design_system/src";
+import { Route, Routes } from "react-router-dom";
+import MenuPage from "./pages/Menu";
+import ContactPage from "./pages/Contact";
 
 export default function App() {
   return (
-    <div>
-      <Header title="Backoffice" href="/backoffice" />
+    <>
+      <Routes>
+        <Route path="/menu" element={<MenuPage />} />
+        <Route path="/contact" element={<ContactPage />} />
+      </Routes>
+      <Header href="/" />
       <FormInput
         label="Nom"
         type="text"
         placeholder="Entrez votre nom"
       />
       <UploadInput label="Téléchargez un fichier" />
-    </div>
-  )
+      <Footer />
+    </>
+  );
 }

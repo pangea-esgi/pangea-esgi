@@ -6,3 +6,4 @@ export { default as SubTitle } from './_components/atoms/SubTitle';
 export { default as MenuCard } from './_components/molecules/MenuCard';
 export { default as formInput } from './_components/molecules/formInput';
 export { Logo } from './_components/atoms/Logo';
+export { Footer } from './_components/atoms/Footer';
