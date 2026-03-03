@@ -1,0 +1,16 @@
+@import '@pangea-esgi/design_system/src/styles/Fonts.css';
+@import '@pangea-esgi/design_system/src/styles/Index.css';
+
+.title-menu {
+    font-style: var(--font-serif);
+    color: var(--tertiary-color);
+    font-size: var(--font-size-5xl);
+}
+
+.title-section-menu{
+    color: var(--tertiary-color);
+    font-size: var(--font-size-3xl);
+    font-style: var(--font-serif);
+    padding-top: var(--padding-20);
+    border-top: 2px solid var(--tertiary-color);
+}

@@ -3,6 +3,7 @@
 	grid-template-columns: 1fr minmax(280px, 40%);
 	grid-template-areas: 'content image';
 	gap: var(--padding-20);
+	background: var(--primary-color);
 	color: var(--tertiary-color);
 }
 
@@ -22,11 +23,12 @@
 
 .menu-card-title {
 	margin: 0;
-	font-size: var(--font-size-5xl);
+	font-size: var(--font-size-4xl);
 	line-height: 1.1;
 	font-style: italic;
 	font-weight: var(--font-weight-regular);
 	color: var(--tertiary-color);
+    font-family: var(--font-serif);
 }
 
 .menu-card-price {

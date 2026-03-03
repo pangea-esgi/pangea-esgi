@@ -1,4 +1,5 @@
 import { MenuCard } from '@pangea-esgi/design_system/src';
+import '../assets/styles/Menu.css';
 
 type Dish = {
   title: string;
@@ -110,19 +111,11 @@ const MenuPage = () => {
         gap: '48px',
       }}
     >
-      <h1 style={{ margin: 0, color: '#562f00', fontStyle: 'italic' }}>Menu</h1>
+      <h1 className='title-menu'>Menu</h1>
 
       {sections.map((section) => (
         <section key={section.title} style={{ display: 'grid', gap: '20px' }}>
-          <h2
-            style={{
-              margin: 0,
-              color: '#562f00',
-              borderTop: '2px solid #562f00',
-              paddingTop: '20px',
-              fontStyle: 'italic',
-            }}
-          >
+          <h2 className='title-section-menu'>
             {section.title}
           </h2>
 
