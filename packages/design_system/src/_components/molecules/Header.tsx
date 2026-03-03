@@ -1,8 +1,8 @@
 import React from 'react';
-import { Lien } from './lien';
-import '../styles/header.css';
-import '../styles/lien.css';
-import logo from '../Images/pangeaLogo.png';
+import { Lien } from '../atoms/Lien.tsx';
+import '../../styles/Header.css';
+import '../../styles/Lien.css';
+import logo from '../../images/pangeaLogo.png';
 
 export type HeaderProps = {
   title: string;

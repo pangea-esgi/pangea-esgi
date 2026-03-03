@@ -1,7 +1,7 @@
 import React from 'react';
-import '../styles/lien.css';
+import '../../styles/Lien.css';
 
-// Lien de redirection avec style de base défini dans lien.CSS. 
+// Lien de redirection avec style de base défini dans lien.CSS.
 
 type LienProps = {
   href: string;
