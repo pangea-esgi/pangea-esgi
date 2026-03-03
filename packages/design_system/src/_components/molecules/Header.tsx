@@ -1,8 +1,9 @@
-import React from 'react';
-import { Lien } from '../atoms/Lien.tsx';
-import '../../styles/Header.css';
-import '../../styles/Lien.css';
-import logo from '../../images/pangeaLogo.png';
+import React from "react";
+import { Lien } from "../atoms/Lien.tsx";
+import "../../styles/Header.css";
+import "../../styles/Lien.css";
+import logo from "../../images/pangeaLogo.png";
+import { Logo } from "../atoms/Logo.tsx";
 
 export type HeaderProps = {
   title: string;
@@ -12,12 +13,12 @@ export type HeaderProps = {
 
 export const Header: React.FC<HeaderProps> = ({
   title,
-//   href,
+  //   href,
   links = [
-    { href: '#', label: 'Home' },
-    { href: '#', label: 'Menu' },
-    { href: '#', label: 'About' },
-    { href: '#', label: 'Contact' },
+    { href: "#", label: "Home" },
+    { href: "#", label: "Menu" },
+    { href: "#", label: "About" },
+    { href: "#", label: "Contact" },
   ],
 }) => {
   const before = links.slice(0, 2);
@@ -32,7 +33,9 @@ export const Header: React.FC<HeaderProps> = ({
           </Lien>
         ))}
       </nav>
-        <img src={logo} alt={title} className="pangea-header-logo" />
+
+      <Logo />
+
       <nav className="pangea-header-nav right">
         {after.map((l, idx) => (
           <Lien key={idx} href={l.href} className="pangea-header-nav-link">
