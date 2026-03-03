@@ -1,27 +1,55 @@
 .form-input {
   display: flex;
   flex-direction: column;
+  padding-top: 8vh;
+  width: 40vh;
 }
 
 .form-input__label {
-  color: var(--header-bg);
+  color: var(--tertiary-color);
   margin-bottom: 0.25rem;
   font-size: 0.875rem;
-  color: #562F00; 
+  color: var(--tertiary-color);
   display: block;
 }
 
 .form-input__control {
-  border: 1px solid #562F00;
+  border: 1px solid var(--tertiary-color);
   border-radius: 7px 7px 7px 7px;
   border-width: 2px;
-  background-color: #fff;
+  /* background-color: #fff; */
   padding: 0.5rem;
   font-size: 1rem;
   outline: none;
 }
 
-
 .form-input__control::placeholder {
-  color: #562f0070;;
+  color: #562f008a;
+}
+
+/* upload input styling */
+.upload-input__wrapper {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  border: 1px solid var(--tertiary-color) ;
+  border-radius: 7px 7px 7px 7px;
+  border-style: dotted;
+  height: 10vh;
+  border-width: 2px;
+}
+
+.upload-input__control {
+  opacity: 0;
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  cursor: pointer;
+}
+
+.upload-input__icon {
+  pointer-events: none;
+  width: 24px;
+  height: 24px;
 }
