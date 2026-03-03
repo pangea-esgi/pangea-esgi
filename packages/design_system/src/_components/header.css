@@ -31,11 +31,6 @@
 }
 
 
-/* override only color if needed for header context */
-/* .pangea-header .pangea-lien.pangea-header-nav-link {
-  color: var(--header-link-color, #fff);
-} */
-
 .pangea-header-logo {
   height: calc(var(--header-height, 60px) - 20px);
   margin-right: 0.75rem;
@@ -45,9 +40,3 @@
   color: var(--header-link-color, #fff);
   font-weight: normal;
 }
-
-/* keep legacy support in case lien component is nested */
-/* .pangea-header .pangea-lien {
-  color: var(--header-link-color, #fff);
-  font-weight: normal;
-} */

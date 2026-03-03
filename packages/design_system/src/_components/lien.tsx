@@ -1,12 +1,7 @@
 import React from 'react';
 import './lien.css';
 
-// Lien de redirection avec style de base défini dans un fichier CSS. La couleur
-// est récupérée depuis la variable CSS `--link-color`; si elle n'est pas définie
-// la teinte par défaut (#ffce99) est utilisée.
-
-// Propriétés exposées pour personnalisation externe (className) ou href/children
-// classiques.
+// Lien de redirection avec style de base défini dans lien.CSS. 
 
 type LienProps = {
   href: string;
