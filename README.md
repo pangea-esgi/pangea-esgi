@@ -8,6 +8,11 @@ L’objectif est de proposer une base de composants cohérente, réutilisable et
 Pangea représente une entreprise de cuisine gastronomique inspirée des saveurs du monde.
 L’identité visuelle cherche un rendu élégant, lisible et premium, avec une interface sobre et structurée.
 
+
+## Pages réalisées :
+
+On a décidé de réaliser les pages de **Contact** et la page **Menu**.
+
 ### Les couleurs :
 
 Codes couleurs en fonction du type de produit à vendre.
