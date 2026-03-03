@@ -1,0 +1,62 @@
+.badge {
+	position: relative;
+	display: inline-flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: var(--border-radius-pill, 999px);
+	border: var(--border-md) solid transparent;
+	min-width: var(--badge-min-width);
+	height: var(--badge-height);
+	padding: 0 var(--padding-24) 0 calc(var(--padding-24) + var(--badge-dot-size));
+	padding-left: calc(var(--padding-24) + var(--badge-dot-size));
+	padding-right: var(--padding-24);
+	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease,
+		box-shadow 0.2s ease;
+}
+
+.badge-label {
+	font-size: var(--font-size-md);
+	font-weight: var(--font-weight-regular);
+	line-height: 1;
+	white-space: nowrap;
+}
+
+.badge-dot {
+	position: absolute;
+	width: var(--badge-dot-size);
+	height: var(--badge-dot-size);
+	border-radius: var(--border-radius-pill, 999px);
+	top: 50%;
+	left: var(--badge-dot-offset-left);
+	transform: translateY(-50%);
+	transition: background-color 0.2s ease;
+}
+
+.badge-primary {
+	background: var(--secondary-color);
+	color: var(--tertiary-color);
+}
+
+.badge-primary .badge-dot {
+	background: var(--tertiary-color);
+}
+
+.badge-secondary {
+	background: var(--tertiary-color);
+	color: var(--secondary-color);
+}
+
+.badge-secondary .badge-dot {
+	background: var(--secondary-color);
+}
+
+.badge-focus {
+	background: var(--secondary-color);
+	color: var(--tertiary-color);
+	border-color: var(--tertiary-color);
+	box-shadow: 0 0 0 var(--focus-ring-inner-spread) var(--secondary-color);
+}
+
+.badge-focus .badge-dot {
+	background: var(--tertiary-color);
+}

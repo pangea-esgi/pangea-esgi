@@ -1,0 +1,65 @@
+@import './Fonts.css';
+
+:root {
+  /* Colors */
+  --primary-color: #fffdf1;
+  --secondary-color: #ffce99;
+  --tertiary-color: #562f00;
+  --disabled-bg-color: #6a6259;
+  --disabled-text-color: #ffebd6;
+  --header-link-color: #ffffff;
+
+  /* Spacing */
+  --padding-4: 4px;
+  --padding-6: calc(var(--padding-4) * 1.5);
+  --padding-8: calc(var(--padding-4) * 2);
+  --padding-12: calc(var(--padding-4) * 3);
+  --padding-16: calc(var(--padding-4) * 4);
+  --padding-20: calc(var(--padding-4) * 5);
+  --padding-24: calc(var(--padding-4) * 6);
+  --padding-26: calc(var(--padding-4) * 6.5);
+  --gap-10: 10px;
+
+  /* Component dimensions */
+  --header-height-default: 60px;
+  --button-padding-y: 16px;
+  --button-padding-x: 32px;
+  --badge-min-width: 132px;
+  --badge-height: 52px;
+  --badge-dot-size: 34px;
+  --badge-dot-offset-left: 10px;
+
+  /* Border */
+  --border-radius: var(--padding-8);
+  --border-sm: 1px;
+  --border-md: 2px;
+  --border-lg: 3px;
+  --border-xl: 4px;
+
+  /* Focus ring */
+  --focus-ring-inner-spread: var(--border-md);
+  --focus-ring-outer-spread: var(--border-xl);
+
+  /* Font Size */
+  --font-size-xs: 12px;
+  --font-size-sm: calc(var(--font-size-xs) * 1.1667);
+  --font-size-md: calc(var(--font-size-xs) * 1.3333);
+  --font-size-lg: calc(var(--font-size-xs) * 1.5);
+  --font-size-xl: calc(var(--font-size-xs) * 1.6667);
+  --font-size-2xl: calc(var(--font-size-xs) * 2);
+  --font-size-3xl: calc(var(--font-size-xs) * 2.6667);
+  --font-size-4xl: calc(var(--font-size-xs) * 3.3333);
+  --font-size-5xl: calc(var(--font-size-xs) * 4);
+
+  /* Font Weight */
+  --font-weight-light: 300;
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-semibold: 600;
+  --font-weight-bold: 700;
+}
+
+body {
+  background-color: var(--primary-color);
+  min-height: 100svh;
+}

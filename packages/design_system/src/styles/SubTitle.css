@@ -1,0 +1,32 @@
+.subtitle {
+	margin: 0;
+	font-size: 20px;
+	line-height: 1.1;
+	font-weight: 400;
+}
+
+.subtitle-default {
+	color: #562f00;
+}
+
+.subtitle-filled {
+	color: #562f00;
+	background: #ffce99;
+	border-radius: 20px;
+	padding: 22px 30px;
+	display: inline-block;
+}
+
+.subtitle-underline {
+	color: #562f00;
+	border-bottom: 3px solid #562f00;
+	padding-bottom: 18px;
+	display: inline-block;
+}
+
+.subtitle-underline-light {
+	color: #f1bd87;
+	border-bottom: 3px solid #f1bd87;
+	padding-bottom: 18px;
+	display: inline-block;
+}

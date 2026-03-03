@@ -3,11 +3,11 @@
   top: 0;
   left: 0;
   width: 100%;
-  height: var(--header-height, 60px);
-  background-color: var(--header-bg, #562F00);
+  height: var(--header-height, var(--header-height-default));
+  background-color: var(--header-bg, var(--tertiary-color));
   display: flex;
   align-items: center;
-  padding: 0 1rem;
+  padding: 0 var(--padding-16);
   box-sizing: border-box;
   z-index: 1000;
 }
@@ -19,7 +19,7 @@
 
 .pangea-header-nav {
   display: flex;
-  gap: 1rem;
+  gap: var(--padding-16);
 }
 
 .pangea-header-nav.left {
@@ -32,11 +32,11 @@
 
 
 .pangea-header-logo {
-  height: calc(var(--header-height, 60px) - 20px);
-  margin-right: 0.75rem;
+  height: calc(var(--header-height, var(--header-height-default)) - var(--padding-20));
+  margin-right: var(--padding-12);
 }
 
 .pangea-header-title {
-  color: var(--header-link-color, #fff);
+  color: var(--header-link-color);
   font-weight: normal;
 }

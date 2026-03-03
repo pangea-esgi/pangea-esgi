@@ -3,13 +3,13 @@
 .btn {
   display: inline-flex;
   align-items: center;
-  gap: 10px;
+  gap: var(--gap-10);
   justify-content: center;
   border: none;
-  border-radius: 8px;
-  background: #562f00;
-  color: #ffce99;
-  padding: 16px 32px;
+  border-radius: var(--border-radius);
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  padding: var(--button-padding-y) var(--button-padding-x);
   line-height: 1;
   cursor: pointer;
   transition: background-color 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
@@ -20,49 +20,53 @@
 }
 
 .btn-text {
-  font-weight: 400;
-  font-size: 16px;
+  font-weight: var(--font-weight-regular);
+  font-size: var(--font-size-md);
 }
 
 .btn-primary {
-  background: #562f00;
-  color: #ffce99;
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 .btn-primary:hover {
-  background: #ffce99;
-  color: #562f00;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .btn-secondary {
-  background: #ffce99;
-  color: #562f00;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
 }
 
 .btn-secondary:hover {
-  background: #562f00;
-  color: #ffce99;
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
 }
 
 .btn-desactivated{
-  background: #6a6259;
-  color: #ffebd6;
+  background: var(--disabled-bg-color);
+  color: var(--disabled-text-color);
   cursor: not-allowed;
 }
 
 .btn-desactivated:hover{
-  background: #6a6259;
-  color: #ffebd6;
+  background: var(--disabled-bg-color);
+  color: var(--disabled-text-color);
 }
 
 .btn-focus {
-  background: #562f00;
-  color: #ffce99;
-  box-shadow: 0 0 0 2px #ffce99, 0 0 0 4px #562f00;
+  background: var(--tertiary-color);
+  color: var(--secondary-color);
+  box-shadow:
+    0 0 0 var(--focus-ring-inner-spread) var(--secondary-color),
+    0 0 0 var(--focus-ring-outer-spread) var(--tertiary-color);
 }
 
 .btn-focus:hover {
-  background: #ffce99;
-  color: #562f00;
-  box-shadow: 0 0 0 2px #fffdf1, 0 0 0 4px #ffce99;
+  background: var(--secondary-color);
+  color: var(--tertiary-color);
+  box-shadow:
+    0 0 0 var(--focus-ring-inner-spread) var(--primary-color),
+    0 0 0 var(--focus-ring-outer-spread) var(--secondary-color);
 }
