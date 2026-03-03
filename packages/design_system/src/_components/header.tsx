@@ -1,7 +1,7 @@
 import React from 'react';
 import { Lien } from './lien';
-import './header.css';
-import './lien.css';
+import '../styles/header.css';
+import '../styles/lien.css';
 import logo from '../Images/pangeaLogo.png';
 
 export type HeaderProps = {
