@@ -1,4 +1,4 @@
-import { Header } from '@pangea-esgi/design_system/src';
+import { Header, Footer } from '@pangea-esgi/design_system/src';
 import FormInput from '@pangea-esgi/design_system/src/_components/molecules/formInput';
 
 export default function App() {
@@ -10,6 +10,7 @@ export default function App() {
         type="text"
         placeholder="Entrez votre nom"
       />
+      <Footer />
     </div>
   )
 }

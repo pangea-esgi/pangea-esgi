@@ -1,0 +1,35 @@
+.pangea-footer-container {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100vw;
+  margin: auto;
+  height: 300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  overflow: hidden;
+}
+
+.pangea-footer-circle {
+  position: absolute;
+  transform: translateY(-50%);
+  top: 100%;
+  width: 50%;
+  height: 50%;
+  border: 10px solid var(--tertiary-color);
+  border-radius: 50%;
+  z-index: -1;
+}
+
+.pangea-footer-circle-1 {
+  width: 50%;
+}
+
+.pangea-footer-circle-2 {
+  width: 75%;
+}
+
+.pangea-footer-circle-3 {
+  width: 90%;
+}
