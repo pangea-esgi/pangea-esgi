@@ -34,7 +34,7 @@
 .pangea-logo-text {
   font-family: var(--font-serif);
   font-size: var(--font-size-2xl);
-  font-weight: medium;
+  font-weight: var(--font-weight-medium);
   color: var(--primary-color);
   font-style: italic;
 }

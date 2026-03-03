@@ -5,6 +5,9 @@
   --primary-color: #fffdf1;
   --secondary-color: #ffce99;
   --tertiary-color: #562f00;
+  --disabled-bg-color: #6a6259;
+  --disabled-text-color: #ffebd6;
+  --header-link-color: #ffffff;
 
   /* Spacing */
   --padding-4: 4px;
@@ -15,12 +18,27 @@
   --padding-20: calc(var(--padding-4) * 5);
   --padding-24: calc(var(--padding-4) * 6);
   --padding-26: calc(var(--padding-4) * 6.5);
+  --gap-10: 10px;
+
+  /* Component dimensions */
+  --header-height-default: 60px;
+  --button-padding-y: 16px;
+  --button-padding-x: 32px;
+  --badge-min-width: 132px;
+  --badge-height: 52px;
+  --badge-dot-size: 34px;
+  --badge-dot-offset-left: 10px;
 
   /* Border */
   --border-radius: var(--padding-8);
   --border-sm: 1px;
   --border-md: 2px;
   --border-lg: 3px;
+  --border-xl: 4px;
+
+  /* Focus ring */
+  --focus-ring-inner-spread: var(--border-md);
+  --focus-ring-outer-spread: var(--border-xl);
 
   /* Font Size */
   --font-size-xs: 12px;

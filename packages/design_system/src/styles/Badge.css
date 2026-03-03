@@ -3,60 +3,60 @@
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
-	border-radius: 999px;
-	border: 2px solid transparent;
-	min-width: 132px;
-	height: 52px;
-	padding: 0 24px 0 56px;
-	padding-left: 56px;
-	padding-right: 24px;
+	border-radius: var(--border-radius-pill, 999px);
+	border: var(--border-md) solid transparent;
+	min-width: var(--badge-min-width);
+	height: var(--badge-height);
+	padding: 0 var(--padding-24) 0 calc(var(--padding-24) + var(--badge-dot-size));
+	padding-left: calc(var(--padding-24) + var(--badge-dot-size));
+	padding-right: var(--padding-24);
 	transition: background-color 0.2s ease, color 0.2s ease, border-color 0.2s ease,
 		box-shadow 0.2s ease;
 }
 
 .badge-label {
-	font-size: 16px;
-	font-weight: 400;
+	font-size: var(--font-size-md);
+	font-weight: var(--font-weight-regular);
 	line-height: 1;
 	white-space: nowrap;
 }
 
 .badge-dot {
 	position: absolute;
-	width: 34px;
-	height: 34px;
-	border-radius: 999px;
+	width: var(--badge-dot-size);
+	height: var(--badge-dot-size);
+	border-radius: var(--border-radius-pill, 999px);
 	top: 50%;
-	left: 10px;
+	left: var(--badge-dot-offset-left);
 	transform: translateY(-50%);
 	transition: background-color 0.2s ease;
 }
 
 .badge-primary {
-	background: #ffce99;
-	color: #562f00;
+	background: var(--secondary-color);
+	color: var(--tertiary-color);
 }
 
 .badge-primary .badge-dot {
-	background: #562f00;
+	background: var(--tertiary-color);
 }
 
 .badge-secondary {
-	background: #562f00;
-	color: #ffce99;
+	background: var(--tertiary-color);
+	color: var(--secondary-color);
 }
 
 .badge-secondary .badge-dot {
-	background: #ffce99;
+	background: var(--secondary-color);
 }
 
 .badge-focus {
-	background: #ffce99;
-	color: #562f00;
-	border-color: #562f00;
-	box-shadow: 0 0 0 2px #ffce99;
+	background: var(--secondary-color);
+	color: var(--tertiary-color);
+	border-color: var(--tertiary-color);
+	box-shadow: 0 0 0 var(--focus-ring-inner-spread) var(--secondary-color);
 }
 
 .badge-focus .badge-dot {
-	background: #562f00;
+	background: var(--tertiary-color);
 }
