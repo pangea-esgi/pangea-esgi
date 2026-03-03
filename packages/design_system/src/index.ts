@@ -1,10 +1,4 @@
-export const hello = () => {
-  return 'Hello world';
-};
-
-export { default as Button } from './_components/bouton';
-
-// re-export components for consumers
-export { Lien } from './_components/lien';
-export { Header } from './_components/header';
-
+export { default as Lien } from './_components/atoms/lien';
+export { default as Header } from './_components/molecules/header';
+export { default as Button } from './_components/atoms/bouton';
+export { default as Badge } from './_components/atoms/badge';
