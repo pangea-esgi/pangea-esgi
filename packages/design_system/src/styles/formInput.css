@@ -1,0 +1,27 @@
+.form-input {
+  display: flex;
+  flex-direction: column;
+}
+
+.form-input__label {
+  color: var(--header-bg);
+  margin-bottom: 0.25rem;
+  font-size: 0.875rem;
+  color: #562F00; 
+  display: block;
+}
+
+.form-input__control {
+  border: 1px solid #562F00;
+  border-radius: 7px 7px 7px 7px;
+  border-width: 2px;
+  background-color: #fff;
+  padding: 0.5rem;
+  font-size: 1rem;
+  outline: none;
+}
+
+
+.form-input__control::placeholder {
+  color: #562f0070;;
+}
