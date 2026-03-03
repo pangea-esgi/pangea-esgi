@@ -37,6 +37,6 @@
 }
 
 .pangea-header-title {
-  color: var(--header-link-color);
+  color: var(--secondary-color);
   font-weight: normal;
 }
